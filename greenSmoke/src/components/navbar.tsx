@@ -5,12 +5,12 @@ import "../style/index.css"; // Ajusta la ruta aquí
 const Navbar: React.FC = () => {
   const [nav, setNav] = useState(false);
   return (
-    <div className="flex justify-between items-center px-2 w-full h-20  text-white bg-gradient-to-r from-lime-700 to-lime-900 fixed shadow-md">
+    <div className="flex justify-between items-center px-2 w-full h-20  text-white bg-gradient-to-r from-lime-700 to-lime-900 fixed shadow-md z-10">
       <div>
         <h1 className="text-3xl font-sans font-bold ml-2">
           <Link to="/">
             <div className="flex">
-              <span className="mx-4">GreenSmoke</span>
+              <span className="mx-4">GreenBottle</span>
             </div>
           </Link>
         </h1>
@@ -19,10 +19,10 @@ const Navbar: React.FC = () => {
       <div>
         <ul className="hidden md:flex h-full items-center">
           <li className="nav-links px-4 capitalize font-medium text-gray-100 hover:scale-105 hover:text-white duration-200 link-underline text-left">
-            <Link to="/">Home</Link>
+            <Link to="/">Conocenos</Link>
           </li>
           <li className="nav-links px-4 capitalize font-medium text-gray-100 hover:scale-105 hover:text-white duration-200 link-underline text-left">
-            <Link to="/events">Eventos</Link>
+            <Link to="/events">Participa</Link>
           </li>
           <li className="nav-links px-4 capitalize font-medium text-gray-100 hover:scale-105 hover:text-white duration-200 link-underline text-left">
             <Link to="/contact">Contacto</Link>
@@ -51,6 +51,7 @@ const Navbar: React.FC = () => {
       )}
 
     </div>
+
   );
 };
 export default Navbar;
